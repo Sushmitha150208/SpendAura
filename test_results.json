@@ -1,0 +1,130 @@
+{
+  "timestamp": "2026-11-17T18:48:26.334Z",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "successRate": "100.0%",
+  "duration": "0.01s",
+  "results": [
+    {
+      "id": "TC-01",
+      "description": "Verify initial seed data integrity and user profile initialization",
+      "status": "PASS",
+      "time": "0.07ms"
+    },
+    {
+      "id": "TC-02",
+      "description": "Verify calculation of Total Income (₹ 35,000) and Total Expense (₹ 16,550)",
+      "status": "PASS",
+      "time": "0.08ms"
+    },
+    {
+      "id": "TC-03",
+      "description": "Verify Savings formula: Savings = Total Income - Total Expense and Balance matches (₹ 18,450)",
+      "status": "PASS",
+      "time": "0.06ms"
+    },
+    {
+      "id": "TC-04",
+      "description": "Verify Expense by Category percentage distribution matches template design",
+      "status": "PASS",
+      "time": "0.20ms"
+    },
+    {
+      "id": "TC-05",
+      "description": "Verify adding a new expense transaction increments Total Expense and adjusts Balance",
+      "status": "PASS",
+      "time": "1.32ms"
+    },
+    {
+      "id": "TC-06",
+      "description": "Verify adding a new income transaction increments Total Income and increases Balance",
+      "status": "PASS",
+      "time": "0.07ms"
+    },
+    {
+      "id": "TC-07",
+      "description": "Verify editing a transaction updates amount, note, and recalculates ledger totals",
+      "status": "PASS",
+      "time": "0.13ms"
+    },
+    {
+      "id": "TC-08",
+      "description": "Verify deleting a transaction removes it from list and restores financial balances",
+      "status": "PASS",
+      "time": "0.07ms"
+    },
+    {
+      "id": "TC-09",
+      "description": "Verify filtering transactions by Category returns only matching items",
+      "status": "PASS",
+      "time": "0.08ms"
+    },
+    {
+      "id": "TC-10",
+      "description": "Verify filtering transactions by Type (expense vs income) returns strictly typed entries",
+      "status": "PASS",
+      "time": "0.11ms"
+    },
+    {
+      "id": "TC-11",
+      "description": "Verify keyword search finds transactions matching description or merchant name",
+      "status": "PASS",
+      "time": "0.06ms"
+    },
+    {
+      "id": "TC-12",
+      "description": "Verify Budget calculation computes accurate spent amount and percentage against limit",
+      "status": "PASS",
+      "time": "0.18ms"
+    },
+    {
+      "id": "TC-13",
+      "description": "Verify Budget alert is triggered when category spending reaches or exceeds 80%",
+      "status": "PASS",
+      "time": "0.14ms"
+    },
+    {
+      "id": "TC-14",
+      "description": "Verify Critical Budget alert is raised when category spending exceeds 100%",
+      "status": "PASS",
+      "time": "0.06ms"
+    },
+    {
+      "id": "TC-15",
+      "description": "Verify creating a custom category with custom color and icon",
+      "status": "PASS",
+      "time": "0.08ms"
+    },
+    {
+      "id": "TC-16",
+      "description": "Verify FR-22 safeguard: deleting a custom category reassigns its transactions to Others",
+      "status": "PASS",
+      "time": "0.19ms"
+    },
+    {
+      "id": "TC-17",
+      "description": "Verify creation of a new savings goal with target amount, target date, and initial progress",
+      "status": "PASS",
+      "time": "0.07ms"
+    },
+    {
+      "id": "TC-18",
+      "description": "Verify depositing savings into a goal increases saved amount and recalculates progress",
+      "status": "PASS",
+      "time": "0.12ms"
+    },
+    {
+      "id": "TC-19",
+      "description": "Verify FR-28: reaching 100% target marks goal completed and triggers celebration alert",
+      "status": "PASS",
+      "time": "0.08ms"
+    },
+    {
+      "id": "TC-20",
+      "description": "Verify FR-31: persistence in localStorage, backup export integrity, and factory reset",
+      "status": "PASS",
+      "time": "0.11ms"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FCEDF0;
+    color: #3A0D22;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Soft Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8D3D8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4B2BC;
+}
+
+/* Glass & Card styles */
+.aura-card {
+  background-color: #FFFFFF;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px -8px rgba(220, 160, 180, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.aura-card-hover {
+  transition: all 0.25s ease-in-out;
+}
+.aura-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -10px rgba(220, 150, 175, 0.24);
+}
